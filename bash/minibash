@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "-------until-------"
+a=1
+until [ $a -gt 5 ]
+do
+    echo $a
+    a=$(($a+1))
+done
+echo "-------for-------"
+for i in 1 2 3 4 5
+do
+    echo $i
+done
+echo "-------do_while-------"
+b=1
+while [[ $b<=5 ]]
+do
+    echo $b
+    let "b++"
+done
